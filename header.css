@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.logo {
+  height: 28px;
+  width: 182px;
+  padding-right: 50px;
+  color: #ffffff;
+}
+
+.about {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 35px;
+  padding-right: 50px;
+  color: #ffffff;
+}
+
+.academics {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 35px;
+  padding-right: 50px;
+  color: #ffffff;
+}
+
+.settings {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 35px;
+  padding-right: 50px;
+  color: #ffffff;
+}
+
+.contact {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 35px;
+  color: #ffffff;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: end;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.login {
+  width: 75px;
+  color: #ffffff;
+}
+
+.register {
+  width: 75px;
+  color: #ffffff;
+}
+
+.settings ul {
+  list-style-type: none;
+}
+
+.settings li a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.settings:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.sub-menu-1 ul li {
+  margin-bottom: 7px;
+}
