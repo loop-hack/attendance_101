@@ -1,0 +1,35 @@
+.contact_us {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 35px;
+  padding-right: 50px;
+  color: #ffffff;
+}
+
+.contact_us ul {
+  list-style-type: none;
+}
+
+.contact_us li a {
+  text-decoration: none;
+  color:black;
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+.sub-menu-2 {
+  display: none;
+}
+
+.contact_us:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.sub-menu-2 ul li {
+  margin-bottom: 7px;
+}
