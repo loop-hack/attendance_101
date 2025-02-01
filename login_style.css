@@ -1,0 +1,74 @@
+body {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('about_images/sign_up.jpeg');
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: slideUp 1.2s ease-out;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #009688;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.input-container .icon {
+  margin-right: 10px;
+}
+
+input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #009688;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #00796b;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  color: #00796b;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
