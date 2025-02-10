@@ -8,6 +8,7 @@
 
 body {
     background : url('about_images/about.jpg') ;
+    
     color: white;
     display: flex;
     flex-direction:column;
@@ -41,3 +42,215 @@ body {
     padding: 20px;
     position: relative;
 }
+.heading-line{
+    color: blueviolet;
+   
+}
+.steps {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+/* Step Box */
+.step-box {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.step-box:hover {
+    transform: scale(1.05);
+}
+
+span {
+    font-size: 2rem;
+}
+
+h2 {
+    color: #ff9800;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Example Box */
+.example-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    position: absolute;
+    
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+/* Feature Box */
+.feature-box {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    
+    margin: 2px auto;
+    
+    margin: 15px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+span {
+    font-size: 2rem;
+}
+
+h2 {
+    color: #ff9800;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Example Box */
+.example-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    width: 20px;
+}
+/* General Styles */
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+} */
+
+/* Features Section */
+.features {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.8rem;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Feature Box */
+.feature-box {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid rgba(0, 238, 255, 0.5);
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.6);
+}
+
+/* Icon */
+span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #00eaff;
+}
+
+/* Feature Heading */
+h2 {
+    color: #ffcc00;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+/* Paragraph */
+p {
+    font-size: 1rem;
+    color: #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .feature-box {
+        padding: 15px;
+    }
+}
+

@@ -7,14 +7,20 @@
   <title>Attendance System</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="front_page.css">
+
 </head>
 
 <body>
   <div class="header">
     <div class="left-header">
-      <div class="logo">logo</div>
+      <div class="logo">
+        <img class="img_l" src="about_images/logo_processed.png">
+      </div>
       <div class="about"><a href="about.html" style="text-decoration: none; color:white">About</a></div>
+
       <div class="academics"><a href="Academics.html" style="text-decoration: none; color:white">Academics</a>
+
       </div>
       <div class="settings">
         <ul>
@@ -34,105 +40,34 @@
           </li>
         </ul>
       </div>
-      <div class="contact_us">
-        <ul>
-          <li>
-            <a href="#" style="color:white">Contact Us</a>
-            <div class="sub-menu-2">
-              <ul>
-                <li><a href="#">Name=Pintu kuamr</a></li>
-                <li><a href="#">Phone Number=123456789</a></li>
-                <li><a href="#">Email.id=monster1234@gmali.com</a></li>
-                <li><a href="#">name=ankit anurag </a></li>
-                <li><a href="#">Phone Number=123456789</a></li>
-
-                <li><a href="#">Email.id=college123@gmail.com</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+      <div conatct_us><a href="contact_us.html" style="text-decoration: none; color:white">Contact Us</a>
+      </div>
+     
+      <div class="right-header">
+        <div class="login"><a href="login.html" style="text-decoration: none; color: white;">Login</a></div>
+        <div class="register"><a href="Register.html" style="text-decoration: none; color: white;">Register</a></div>
       </div>
     </div>
-    <div class="right-header">
-      <div class="login"><a href="login.html" style="text-decoration: none; color: white;">Login</a></div>
-      <div class="register"><a href="Register.html" style="text-decoration: none; color: white;">Register</a></div>
-    </div>
+    
   </div>
-  <header>
-    <h1>Attendance Management System</h1>
-  </header>
+  <div class="image-container">
+  <div class="front_page_line" > <img class="front_page1" src="about_images/frot_page1.jpg">
+     
+      <header class="hero">
+        <div class="image-text">
+            <h3 class="header_container" > Face Recognition Attendance System</h3>
+            <p >Fast, Accurate & Secure Attendance Tracking</p>
+            <a href="login.html" class="btn">Get Started</a>
+        </div>
+    </header>
 
-  <main>
-
-    <div class="login-options">
-      <button onclick="openLogin('student')">Student</button>
-      <button onclick="openLogin('teacher')">Teacher</button>
-      <button onclick="openLogin('principal')">Principal </button>
-    </div>
-
-    <div id="loginFormContainer" class="hidden">
-      <h2 id="roleTitle">Login</h2>
-      <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" required>
-        <br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
-        <br>
-
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  </main>
-  <div class="container">
-
-    <input type="text" id="principleName" placeholder="Enter principle  name">
-    <button onclick="markAttendance()">Mark Attendance</button>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Status</th>
-          <th>Time</th>
-        </tr>
-      </thead>
-      <tbody id="attendanceList"></tbody>
-    </table>
-    <div class="container">
-
-      <input type="text" id="studentName" placeholder="Enter teacher name">
-      <button onclick="markAttendance()">Mark Attendance</button>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Status</th>
-            <th>Time</th>
-          </tr>
-        </thead>
-        <tbody id="attendanceList"></tbody>
-      </table>
-    </div>
-    <div class="container">
-
-      <input type="text" id="studentName" placeholder="Enter student name">
-      <button onclick="markAttendance()">Mark Attendance</button>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Status</th>
-            <th>Time</th>
-          </tr>
-        </thead>
-        <tbody id="attendanceList"></tbody>
-      </table>
-    </div>
+    
+  
   </div>
+  
+  <div> <img class="front_page1" src="about_images/front_page2.jpg"></div>
+  <div> <img class="front_page1" src="about_images/front_page3.jpg"></div>
+  
   <script src="script.js"></script>
 </body>
 

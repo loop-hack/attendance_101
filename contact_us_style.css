@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(0, 140, 255, 0.8), rgba(0, 74, 163, 0.8)), url('https://source.unsplash.com/1600x900/?abstract,technology');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1100px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.contact-form {
+  width: 50%;
+  padding: 40px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 5px rgba(0, 140, 255, 0.5);
+}
+
+.input-container label {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 1.2rem;
+  color: #aaa;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-container input:focus + label,
+.input-container textarea:focus + label {
+  top: -20px;
+  font-size: 1rem;
+  color: #00c6ff;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #00c6ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0072ff;
+}
+
+.contact-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+      flex-direction: column;
+  }
+
+  .contact-form-container {
+      flex-direction: column;
+  }
+
+  .contact-form {
+      width: 100%;
+      padding: 30px;
+  }
+
+  .contact-image {
+      width: 100%;
+  }
+}
