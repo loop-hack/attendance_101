@@ -5,8 +5,95 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* General Styles */
 body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Introduction Section */
+.introduction {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.8rem;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Overview Box */
+.overview-box {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid rgba(0, 238, 255, 0.5);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.overview-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.6);
+}
+
+/* Icons */
+span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #00eaff;
+}
+
+/* Overview Title */
+h2 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+/* Paragraph */
+p {
+    font-size: 1.1rem;
+    color: #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .overview-box {
+        padding: 15px;
+    }
+}
+
+
+/* body {
     background : url('about_images/about.jpg') ;
     
     color: white;
@@ -21,9 +108,9 @@ body {
     display: block;
     justify-content: center;
     gap: 20px;
-}
+} */
 
-.holo-box{
+/* .holo-box{
     width: 700px;
     height: 570px;
     background: rgba(255, 255, 255, 0.1);
@@ -41,135 +128,123 @@ body {
     margin: 50px 0;
     padding: 20px;
     position: relative;
-}
-.heading-line{
-    color: blueviolet;
-   
-}
-.steps {
-    padding: 50px 20px;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #00bcd4;
-    margin-bottom: 20px;
-}
-
-/* Step Box */
-.step-box {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border-radius: 8px;
-    margin: 15px 0;
-    transition: transform 0.3s ease-in-out;
-}
-
-.step-box:hover {
-    transform: scale(1.05);
-}
-
-span {
-    font-size: 2rem;
-}
-
-h2 {
-    color: #ff9800;
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
-}
-
-/* Example Box */
-.example-box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-}
-/* Features Section */
-.features {
-    padding: 50px 20px;
-    position: absolute;
-    
-}
-
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #00bcd4;
-    margin-bottom: 20px;
-}
-
-/* Feature Box */
-.feature-box {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2px;
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    
-    margin: 2px auto;
-    
-    margin: 15px 0;
-    transition: transform 0.3s ease-in-out;
-}
-
-.feature-box:hover {
-    transform: scale(1.05);
-}
-
-span {
-    font-size: 2rem;
-}
-
-h2 {
-    color: #ff9800;
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
-}
-
-/* Example Box */
-.example-box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    width: 20px;
-}
-/* General Styles */
-/* body {
+} */
+ /* General Styles */
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #0a192f;
     color: white;
     margin: 0;
     padding: 0;
     text-align: center;
-} */
+}
+
+/* AI Process Section */
+.ai-process {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.8rem;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Steps Grid */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Step Box */
+.step-box {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid rgba(0, 238, 255, 0.5);
+}
+
+.step-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.6);
+}
+
+/* Icon */
+span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #00eaff;
+}
+
+/* Step Heading */
+h2 {
+    color: #ffcc00;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+/* Paragraph */
+p {
+    font-size: 1rem;
+    color: #eee;
+}
+
+/* Example Box */
+.example-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 204, 0, 0.5);
+}
+
+.example-box h2 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .step-box {
+        padding: 15px;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
 /* Features Section */
 .features {
@@ -253,4 +328,399 @@ p {
         padding: 15px;
     }
 }
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Section Styling */
+.why-choose {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.8rem;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Benefit Box */
+.benefit-box {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid rgba(0, 238, 255, 0.5);
+}
+
+.benefit-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.6);
+}
+
+/* Icons */
+span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #00eaff;
+}
+
+/* Benefit Heading */
+h2 {
+    color: #ffcc00;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+/* Paragraph */
+p {
+    font-size: 1rem;
+    color: #eee;
+}
+
+/* Example Box */
+.example-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 204, 0, 0.5);
+}
+
+.example-box h2 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .benefit-box {
+        padding: 15px;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.8rem;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Mission & Vision Grid */
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Mission & Vision Box */
+.mv-box {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid rgba(0, 238, 255, 0.5);
+}
+
+.mv-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.6);
+}
+
+/* Icons */
+span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #00eaff;
+}
+
+/* Box Heading */
+h2 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+/* Paragraph */
+p {
+    font-size: 1.1rem;
+    color: #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .mv-box {
+        padding: 15px;
+    }
+}
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72);
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.8rem;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    margin-bottom: 15px;
+}
+
+h1 span {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
+
+.intro {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Team Box */
+.team-box {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid rgba(0, 238, 255, 0.5);
+}
+
+.team-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.6);
+}
+
+/* Team Images */
+.team-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #00eaff;
+}
+
+/* Team Names */
+h2 {
+    color: #ffcc00;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+/* Team Role */
+p {
+    font-size: 1rem;
+    color: #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .team-box {
+        padding: 15px;
+    }
+}
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72);
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.8rem;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Contact Box */
+.contact-box {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid rgba(0, 238, 255, 0.5);
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.6);
+}
+
+/* Icons */
+span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #00eaff;
+}
+
+/* Contact Title */
+h2 {
+    color: #ffcc00;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+/* Contact Details */
+p {
+    font-size: 1.2rem;
+    color: #eee;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #00eaff;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-box {
+        padding: 15px;
+    }
+}
+
 
