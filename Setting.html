@@ -1,22 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>setting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Attendance System Settings</title>
+    <link rel="stylesheet" href="Settings.css">
 </head>
 <body>
-  <div class="setting-item">
-  <div class="setting-item" draggable="true"> change name </div>
-  <div class="setting-item" draggable="true"> Notification</div>
-  <div class="setting-item" draggable="true"> security</div>
-  <div class="setting-item" draggable="true">  Customization</div>
-  <div class="setting-item" draggable="true"> attendance configuration</div>
-  <div class="setting-item" draggable="true"> change the lenguage </div>
-  <div class="setting-item" draggable="true"> profile </div>
-  <div class="setting-item" draggable="true"> logout</div>
-  </div>
- 
+    <div class="container">
+        <h1 class="page-title">AI Attendance System Settings</h1>
 
+        <!-- General Settings -->
+        <section class="settings-section">
+            <h2>1. General Settings</h2>
+            <div class="setting-item">
+                <label for="language">System Language:</label>
+                <select id="language">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Spanish</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label for="theme">Theme:</label>
+                <select id="theme">
+                    <option>Light</option>
+                    <option>Dark</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label for="timezone">Timezone:</label>
+                <input type="text" id="timezone" placeholder="Enter Timezone">
+            </div>
+            <div class="setting-item">
+                <label for="auto-logout">Auto-Logout (in minutes):</label>
+                <input type="number" id="auto-logout" placeholder="10">
+            </div>
+        </section>
+
+        <!-- Attendance Settings -->
+        <section class="settings-section">
+            <h2>2. Attendance Settings</h2>
+            <div class="setting-item">
+                <label for="class-timetable">Class Timetable:</label>
+                <input type="text" id="class-timetable" placeholder="Enter Timetable">
+            </div>
+            <div class="setting-item">
+                <label for="auto-marking">Automatic Marking:</label>
+                <input type="checkbox" id="auto-marking">
+            </div>
+            <div class="setting-item">
+                <label for="late-checkin">Late Check-in Time (minutes):</label>
+                <input type="number" id="late-checkin" placeholder="5">
+            </div>
+            <div class="setting-item">
+                <label for="leave-management">Leave Management:</label>
+                <input type="checkbox" id="leave-management">
+            </div>
+            <div class="setting-item">
+                <label for="attendance-history">Attendance History:</label>
+                <input type="checkbox" id="attendance-history">
+            </div>
+            <div class="setting-item">
+                <label for="manual-attendance">Manual Attendance:</label>
+                <input type="checkbox" id="manual-attendance">
+            </div>
+        </section>
+
+        <!-- Face Recognition Settings -->
+        <section class="settings-section">
+            <h2>3. Face Recognition Settings</h2>
+            <div class="setting-item">
+                <label for="enrollment">Face Enrollment:</label>
+                <button id="enrollment">Add Face</button>
+            </div>
+            <div class="setting-item">
+                <label for="face-threshold">Face Matching Threshold:</label>
+                <input type="number" id="face-threshold" placeholder="80">
+            </div>
+            <div class="setting-item">
+                <label for="image-quality">Image Quality Settings:</label>
+                <input type="text" id="image-quality" placeholder="High/Medium/Low">
+            </div>
+            <div class="setting-item">
+                <label for="multi-face-detection">Multiple Face Detection:</label>
+                <input type="checkbox" id="multi-face-detection">
+            </div>
+            <div class="setting-item">
+                <label for="mask-detection">Mask Detection:</label>
+                <input type="checkbox" id="mask-detection">
+            </div>
+        </section>
+
+        <!-- User Management -->
+        <section class="settings-section">
+            <h2>4. User Management</h2>
+            <div class="setting-item">
+                <label for="user-roles">User Roles:</label>
+                <select id="user-roles">
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Admin</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label for="permissions">Permissions:</label>
+                <input type="text" id="permissions" placeholder="Assign Permissions">
+            </div>
+            <div class="setting-item">
+                <label for="account-management">Account Management:</label>
+                <input type="checkbox" id="account-management">
+            </div>
+        </section>
+
+        <!-- Notifications & Alerts -->
+        <section class="settings-section">
+            <h2>5. Notifications & Alerts</h2>
+            <div class="setting-item">
+                <label for="attendance-alerts">Attendance Alerts:</label>
+                <input type="checkbox" id="attendance-alerts">
+            </div>
+            <div class="setting-item">
+                <label for="admin-alerts">Admin Alerts:</label>
+                <input type="checkbox" id="admin-alerts">
+            </div>
+            <div class="setting-item">
+                <label for="attendance-summary">Attendance Summary (Email/SMS):</label>
+                <input type="checkbox" id="attendance-summary">
+            </div>
+        </section>
+
+        <!-- Security & Privacy -->
+        <section class="settings-section">
+            <h2>6. Security & Privacy</h2>
+            <div class="setting-item">
+                <label for="encryption">Encryption:</label>
+                <input type="checkbox" id="encryption">
+            </div>
+            <div class="setting-item">
+                <label for="data-backup">Data Backup:</label>
+                <input type="checkbox" id="data-backup">
+            </div>
+            <div class="setting-item">
+                <label for="privacy-policy">Privacy Policy:</label>
+                <input type="checkbox" id="privacy-policy">
+            </div>
+            <div class="setting-item">
+                <label for="audit-logs">Audit Logs:</label>
+                <input type="checkbox" id="audit-logs">
+            </div>
+        </section>
+
+        <!-- Integration & API Settings -->
+        <section class="settings-section">
+            <h2>7. Integration & API Settings</h2>
+            <div class="setting-item">
+                <label for="external-db">External Database Integration:</label>
+                <input type="checkbox" id="external-db">
+            </div>
+            <div class="setting-item">
+                <label for="api-access">API Access:</label>
+                <input type="checkbox" id="api-access">
+            </div>
+            <div class="setting-item">
+                <label for="third-party-integration">Third-Party Face Recognition:</label>
+                <input type="checkbox" id="third-party-integration">
+            </div>
+        </section>
+
+        <!-- Reports & Analytics -->
+        <section class="settings-section">
+            <h2>8. Reports & Analytics</h2>
+            <div class="setting-item">
+                <label for="attendance-reports">Attendance Reports:</label>
+                <input type="checkbox" id="attendance-reports">
+            </div>
+            <div class="setting-item">
+                <label for="face-recognition-reports">Face Recognition Accuracy Reports:</label>
+                <input type="checkbox" id="face-recognition-reports">
+            </div>
+            <div class="setting-item">
+                <label for="custom-reports">Custom Reports:</label>
+                <input type="checkbox" id="custom-reports">
+            </div>
+        </section>
+
+        <!-- Support & Help -->
+        <section class="settings-section">
+            <h2>9. Support & Help</h2>
+            <div class="setting-item">
+                <label for="faq">FAQs:</label>
+                <input type="checkbox" id="faq">
+            </div>
+            <div class="setting-item">
+                <label for="live-support">Live Support:</label>
+                <input type="checkbox" id="live-support">
+            </div>
+            <div class="setting-item">
+                <label for="troubleshooting-tips">Troubleshooting Tips:</label>
+                <input type="checkbox" id="troubleshooting-tips">
+            </div>
+        </section>
+
+        <!-- Logout Settings -->
+        <section class="settings-section">
+            <h2>10. Logout Settings</h2>
+            <div class="setting-item">
+                <label for="logout-timeout">Logout Timeout (in minutes):</label>
+                <input type="number" id="logout-timeout" placeholder="15">
+            </div>
+            <div class="setting-item">
+                <label for="manual-logout">Manual Logout:</label>
+                <input type="checkbox" id="manual-logout">
+            </div>
+        </section>
+
+        <!-- Save Button -->
+        <div class="save-button-container">
+            <button class="save-btn">Save</button>
+        </div>
+    </div>
+
+    <script src="Settings.js"></script>
 </body>
 </html>
