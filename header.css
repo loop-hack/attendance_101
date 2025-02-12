@@ -3,7 +3,7 @@
   flex-direction: row;
   flex: 1;
   align-items: center;
-  background-color: #1f1f1f;
+  background-color: black;
   color: #ffffff;
   height: 53px;
   font-size: 19px;
@@ -15,7 +15,7 @@
   flex-direction: row;
   flex: 1;
   align-items: center;
-  background-color: #1f1f1f;
+  background-color: black;
   color: #ffffff;
 }
 
@@ -69,7 +69,7 @@
   flex-direction: row;
   flex: 1;
   justify-content: end;
-  background-color: #1f1f1f;
+  background-color: balck;
   color: #ffffff;
 }
 
@@ -81,6 +81,7 @@
 .register {
   width: 75px;
   color: #ffffff;
+  padding-right: 20px;
 }
 
 .settings ul {
