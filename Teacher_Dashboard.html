@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="Teacher_Dashboard.css">
+    <script defer src="Teacher_Dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Teacher Panel</h2>
+            <ul>
+                <li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+                <li><i class="fas fa-user-check"></i> Attendance</li>
+                <li><i class="fas fa-book"></i> Grades</li>
+                <li><i class="fas fa-calendar-alt"></i> Schedule</li>
+                <li><i class="fas fa-envelope"></i> Messages</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Teacher Dashboard</h1>
+                <div class="top-bar">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-user"></i>
+                </div>
+            </header>
+
+            <section class="stats">
+                <div class="card">
+                    <h3>Total Students</h3>
+                    <p id="total-students">95</p>
+                </div>
+                <div class="card">
+                    <h3>Present Today</h3>
+                    <p id="present-students">45</p>
+                </div>
+                <div class="card">
+                    <h3>Upcoming Classes</h3>
+                    <p>20Lectures</p>
+                </div>
+            </section>
+
+            <section class="attendance">
+                <h2>Live Attendance</h2>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Update</th>
+                    </tr>
+                    <tr>
+                        <td>pintu kumar</td>
+                        <td class="status">Present</td>
+                        <td><button class="update-btn">Update</button></td>
+                    </tr>
+                    <tr>
+                        <td>ankit kumar</td>
+                        <td class="status">Absent</td>
+                        <td><button class="update-btn">Update</button></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+
