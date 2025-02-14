@@ -51,15 +51,6 @@
   position: relative;
   padding-bottom: 20px;
 }
-
-/* Pointer Styling */
-.pointer {
-  font-size: 24px;
-  margin-right: 15px;
-  color: #00ffff; /* Neon cyan */
-  animation: glow 1.5s infinite alternate; /* Neon glow animation */
-}
-
 @keyframes glow {
   0% {
     text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
