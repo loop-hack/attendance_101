@@ -29,7 +29,7 @@
   font-size: 12px;
   width: 410px;
   top: 20%;
-  left: 0%;
+  left: 0.7%;
   color: white;
 }
 .first_para{
@@ -45,7 +45,7 @@
 .first_para li {
   font-size: 20px;
   line-height: 1.8;
-  margin-bottom: 15px; /* Space between lines */
+  margin-bottom: 12px; /* Space between lines */
   display: flex;
   align-items: center;
   position: relative;
@@ -93,7 +93,7 @@
 .second_para li {
   font-size: 20px;
   line-height: 1.8;
-  margin-bottom: 15px; /* Space between lines */
+  margin-bottom: 12px; /* Space between lines */
   display: flex;
   align-items: center;
   position: relative;
