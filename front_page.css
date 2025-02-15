@@ -120,8 +120,7 @@
 /* Highlighted Text */
 .highlight {
   font-weight: bold;
-  background: linear-gradient(90deg, #00ffff, #00ffaa); /* Gradient text */
-  -webkit-background-clip: text;
+  background: linear-gradient(90deg, #00ffff, #00ffaa);
   -webkit-text-fill-color: transparent;
 }
 
