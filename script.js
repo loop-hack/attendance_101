@@ -58,3 +58,18 @@ gsap.from(".c-heading__bottom", {
   duration: 1,
   ease: "power3.out",
 });
+document.querySelectorAll('.feature-card').forEach(card => {
+  card.addEventListener('click', () => {
+      alert(`${card.querySelector('h2').innerText} - Feature Selected!`);
+  });
+});
+function updateStatus() {
+  let statusMessage = document.getElementById("status-message");
+  statusMessage.innerHTML = "🟢 Live Attendance Data Updating...";
+  
+  setTimeout(() => {
+      statusMessage.innerHTML = "✅ Attendance Synced!";
+  }, 3000);
+}
+
+
