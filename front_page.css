@@ -82,7 +82,7 @@
   color: #00ffff;
   text-shadow: 0 0 10px #00ffff, 0 0 20px #00e6e6, 0 0 30px #00cccc;
   animation: glow 1s infinite alternate;
-  font-size:2em;
+  font-size:1.7em;
   font-weight: bold;
   text-align: center;
  
@@ -119,17 +119,16 @@
 
  .right_box{
   position:absolute;
-  
   font-size: 14px;
   width: 340px;
   top: 20%;
-  right: 0%;
+  right: 4.1%;
   color: white;
   top: 88px;
  
 } 
 .glow-text1 {
-  
+  display: flexbox;
   color: #00ffff;
   text-shadow: 0 0 10px #00ffff, 0 0 20px #00e6e6, 0 0 30px #00cccc;
   animation: glow 1s infinite alternate;
@@ -551,7 +550,7 @@ a {
 .legal-links a:hover {
   color: #f39c12;
 }
-.container5{
+/* .container5{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,7 +559,7 @@ a {
   gap: 100px;
   height: 30px;
   
-}
+} */
 
 
 
@@ -595,7 +594,7 @@ a {
 /* Features List */
 .features-list {
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 0;
 }
 
@@ -606,6 +605,21 @@ a {
   margin-bottom: 12px;
   font-weight: 600;
   color: #ddd;
+  transition: transform 0.3s ease-in-out;
+}
+
+.para_x{
+  display: flexbox;
+  width: 385px;
+  font-size: 21px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.para_x:hover{
+  transform: translateX(14px);
+  color: #00c6ff;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -621,7 +635,7 @@ a {
 }
 
 /* Live Status Button */
-.status-btn {
+.status-btn, .sync-btn {
   background: linear-gradient(90deg, #00c6ff, #0072ff);
   border: none;
   padding: 10px 20px;
@@ -633,13 +647,15 @@ a {
   transition: 0.3s;
 }
 
-.status-btn:hover {
+.status-btn:hover, .sync-btn:hover {
   background: linear-gradient(90deg, #0072ff, #00c6ff);
 }
 
 /* Status Message */
-#status-message {
+#status-message, #sync-status {
   font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 20px;
   margin-top: 10px;
   animation: blink 1.5s infinite alternate;
 }
