@@ -682,6 +682,89 @@ a {
   }
 }
 
+/* body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+} */
+.container {
+  max-width: 1200px;
+  margin:-30px  auto;
+  /* padding: 20px; */
+  
+}
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  
+}
+/* .card1 {
+  background: rgba(255, 255, 255, 0.1);
+  padding:20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  text-align: left;
+} */
+.card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  color: white;
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.button:hover {
+  background: linear-gradient(45deg, #00d4ff, #007bff);
+}
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff5722;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.chat-button:hover {
+  background: #ff784e;
+}
 
 
 

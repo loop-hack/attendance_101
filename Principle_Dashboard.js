@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   // Example dynamic content
-  const latecomers = ['Student pintu kumar', 'Student vikash kumar', 'Student ankit anurag', 'Student rishikesh sarma ', 'Student braj kumar'];
+//   const latecomers = ['Student pintu kumar', 'Student vikash kumar', 'Student ankit anurag', 'Student rishikesh sarma ', 'Student braj kumar', 'Student shivam raj'];
   const latecomersList = document.getElementById('latecomers');
   latecomers.forEach(student => {
       const listItem = document.createElement('li');
