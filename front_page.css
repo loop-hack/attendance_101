@@ -623,6 +623,22 @@ a {
   transition: transform 0.3s ease-in-out;
 }
 
+.para_x1{
+display: flexbox;
+width: 620px;
+font-size: 21px;
+margin-bottom: 10px;
+margin-right: 10px;
+font-weight: bold;
+margin-left: 15px;
+}
+
+.para_x1:hover{
+transform: translateX(14px);
+color: #00c6ff;
+transition: transform 0.3s ease-in-out;
+}
+
 .features-list li:hover {
   transform: translateX(10px);
   color: #00c6ff;
